@@ -4,3 +4,5 @@
 ### Installation
 1. Clone this repo into your project folder.
 2. Edit the Vagrantfile to add a static IP address
+3. `vagrant up`
+4. Profit
