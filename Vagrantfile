@@ -1,8 +1,9 @@
+
+
+# SET YOUR IP ADDRESS HERE
 #################################
 
-#SET YOUR IP ADDRESS HERE
-
-public_ip = "192.168.0.50"
+public_ip = "YOUR IP"
 
 #################################
 
