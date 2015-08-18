@@ -8,9 +8,10 @@ public_ip = "YOUR IP"
 #################################
 
 Vagrant.configure(2) do |config|
-  
+
   config.vm.box_url = "http://laserred.co/vagrant/laserred.box"
   config.vm.box = "laserred.box"
+  config.ssh.insert_key = false
   config.vm.network "public_network", ip: public_ip
   config.vm.hostname = (0...10).map { ('a'..'z').to_a[rand(26)] }.join + ".neutrino.dev"
   config.vm.post_up_message = "Laser Red Neutrino is now running on ip address: #{public_ip}"
