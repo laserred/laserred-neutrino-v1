@@ -1,9 +1,7 @@
-
-
 # SET YOUR IP ADDRESS HERE
 #################################
 
-public_ip = "YOUR IP"
+public_ip = "YOUR IP HERE"
 
 #################################
 
@@ -21,12 +19,11 @@ Vagrant.configure(2) do |config|
     puppet.manifests_path = "puppet/manifests"
     puppet.module_path = "puppet/modules"
     puppet.manifest_file  = "init.pp"
-    #puppet.options="--verbose --debug"
   end
 
   # Fix for slow external network connections
   config.vm.provider :virtualbox do |vb|
-    vb.memory = 1024
+    vb.memory = 1024 #1 gig of RAM, if you're having speed problems and have a decent amount of RAM 2048 is probably a better number
     vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
     vb.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
   end
