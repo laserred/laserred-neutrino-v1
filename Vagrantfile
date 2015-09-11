@@ -10,7 +10,7 @@ Vagrant.configure(2) do |config|
   config.vm.box_url = "http://laserred.co/vagrant/laserred.box"
   config.vm.box = "laserred.box"
   config.ssh.insert_key = false
-  config.vm.network "public_network", ip: public_ip
+  config.vm.network "public_network"
   config.vm.hostname = host_name
   config.vm.post_up_message = "Laser Red Neutrino is now running on: #{host_name}"
 
