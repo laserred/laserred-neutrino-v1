@@ -1,7 +1,7 @@
-# SET YOUR IP ADDRESS HERE
+# SET YOUR HOSTNAME ADDRESS HERE
 #################################
 
-public_ip = "YOUR IP HERE"
+host_name = [projectname].local
 
 #################################
 
@@ -11,8 +11,8 @@ Vagrant.configure(2) do |config|
   config.vm.box = "laserred.box"
   config.ssh.insert_key = false
   config.vm.network "public_network", ip: public_ip
-  config.vm.hostname = (0...10).map { ('a'..'z').to_a[rand(26)] }.join + ".neutrino.dev"
-  config.vm.post_up_message = "Laser Red Neutrino is now running on ip address: #{public_ip}"
+  config.vm.hostname = host_name
+  config.vm.post_up_message = "Laser Red Neutrino is now running on: #{host_name}"
 
   #run puppet to get the latest WP version and install it.
   config.vm.provision :puppet do |puppet|
