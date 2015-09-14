@@ -7,7 +7,7 @@
 3. `vagrant up`
 4. On first boot, you will need to run `vagrant reload` in order for the hostname to be recognised on the network.
 
-**If you have a local copy of laserred.box you can comment out the line in the Vagrantfile containing:**
+**If you have a local copy of neutrino-v2.box you can comment out the line in the Vagrantfile containing:**
 
 **`config.vm.box_url = "http://laserred.co/vagrant/neutrino-v2.box"` (Add a `#` in front of it).**
 
