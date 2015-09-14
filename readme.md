@@ -1,4 +1,4 @@
-# Laser Red Neutrino
+# Laser Red Neutrino v2.0
 ## A simple wordpress vagrant environment
 
 ### Installation
