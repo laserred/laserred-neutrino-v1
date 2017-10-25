@@ -7,7 +7,7 @@ host_name = "test"
 
 Vagrant.configure(2) do |config|
 
-  config.vm.box_url = "http://laserred.co/vagrant/neutrino-v2.box"
+  config.vm.box_url = "https://laser.red/vagrant/neutrino-v2.box"
   config.vm.box = "neutrino-v2.box"
   config.vm.hostname = "#{host_name}"
   config.vm.network "public_network"
