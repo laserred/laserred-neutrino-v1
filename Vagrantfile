@@ -1,7 +1,7 @@
 # SET YOUR HOSTNAME ADDRESS HERE
 #################################
 
-host_name = "miracle"
+host_name = "test"
 
 #################################
 
